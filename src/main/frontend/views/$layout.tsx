@@ -11,7 +11,15 @@ export default function MainLayout() {
 
             <nav slot="drawer" className="p-m flex flex-col gap-m">
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="flow">Flow</NavLink>
+
+                <h3 className="text-l mt-l">Flow</h3>
+                <NavLink to="flow-components">Components</NavLink>
+                <NavLink to="flow-layouts">Layouts</NavLink>
+                <NavLink to="flow-events">Events</NavLink>
+                <NavLink to="flow-grid">Grid</NavLink>
+                <NavLink to="flow-form">Form</NavLink>
+
+                <h3 className="text-l mt-l">Hilla</h3>
             </nav>
 
             <div className="p-m">
