@@ -21,6 +21,7 @@ export default function MainLayout() {
                 <NavLink to="flow-push">Push</NavLink>
 
                 <h3 className="text-l mt-l">Hilla</h3>
+                <NavLink to="hilla-components">Components</NavLink>
             </nav>
 
             <div className="p-m">
