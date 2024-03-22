@@ -12,11 +12,11 @@ public class Contact {
     @Id
     @GeneratedValue
     private Long id;
-    @Size(min = 2)
+    @Size(min = 2, message = "Name should be at least 2 characters")
     private String name;
-    @Email
+    @Email(message = "Must be a valid email")
     private String email;
-    @Pattern(regexp = "\\d{3}-\\d{3}-\\d{4}")
+    @Pattern(regexp = "\\d{3}-\\d{3}-\\d{4}", message = "Please enter in the format 123-456-7890")
     private String phone;
 
     public Contact() {

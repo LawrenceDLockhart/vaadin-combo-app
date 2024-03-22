@@ -12,7 +12,7 @@ public class FlowPush extends VerticalLayout {
         var ui = UI.getCurrent();
 
         Flux.fromArray("Full stack from the back!".split(" "))
-                .delayElements(Duration.ofSeconds(1))
+                .delayElements(Duration.ofMillis(500))
                 .subscribe(word -> ui.access(() -> add(word+ " ")));
     }
 }

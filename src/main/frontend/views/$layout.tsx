@@ -28,7 +28,7 @@ export default function MainLayout() {
                 <NavLink to="hilla-push">Push</NavLink>
             </nav>
 
-            <div className="p-m">
+            <div className="p-m min-h-full box-border">
                 <Outlet/>
             </div>
         </AppLayout>
