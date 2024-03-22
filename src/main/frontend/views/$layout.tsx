@@ -22,6 +22,9 @@ export default function MainLayout() {
 
                 <h3 className="text-l mt-l">Hilla</h3>
                 <NavLink to="hilla-components">Components</NavLink>
+                <NavLink to="hilla-autocrud">AutoCrud</NavLink>
+                <NavLink to="hilla-autogrid">AutoGrid</NavLink>
+                <NavLink to="hilla-push">Push</NavLink>
             </nav>
 
             <div className="p-m">
