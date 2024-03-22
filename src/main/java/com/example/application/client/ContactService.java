@@ -20,4 +20,12 @@ public class ContactService {
     public List<Contact> findAll() {
         return repo.findAll();
     }
+
+    public Contact save(Contact contact) {
+        return repo.save(contact);
+    }
+
+    public Contact findById(Long id) {
+        return repo.findById(id).orElseThrow();
+    }
 }
