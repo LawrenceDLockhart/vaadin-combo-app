@@ -3,6 +3,7 @@ package com.example.application.views;
 import com.example.application.data.Contact;
 import com.example.application.data.ContactRepository;
 import com.vaadin.flow.component.grid.Grid;
+import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
@@ -13,6 +14,7 @@ public class FlowGrid extends VerticalLayout {
 
     public FlowGrid(ContactRepository repo) {
 
+        add(new H2("Vaadin Grid"));
         var grid = new Grid<Contact>();
         grid.addColumn(Contact::getName).setHeader("Name");
         grid.addColumn(Contact::getEmail).setHeader("Email");
