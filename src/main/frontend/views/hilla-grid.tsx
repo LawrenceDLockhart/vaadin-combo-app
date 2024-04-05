@@ -22,6 +22,14 @@ export default function HillaGrid() {
                 <GridColumn path="phone" />
             </Grid>
 
+
+
+
+
+
+
+
+
             <h3 className="mt-xl">AutoGrid</h3>
             <AutoGrid service={CrudService} model={ContactModel} />
         </div>

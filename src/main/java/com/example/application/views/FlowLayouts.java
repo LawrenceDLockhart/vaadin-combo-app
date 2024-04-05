@@ -15,24 +15,26 @@ public class FlowLayouts extends VerticalLayout {
     public FlowLayouts() {
         HorizontalLayout layout = new HorizontalLayout();
         layout.add(new H3("Vaadin Layouts"));
+
         HorizontalLayout buttons = new HorizontalLayout();
         buttons.add(new Button("Start"));
         buttons.add(new Button("Pause"));
         buttons.add(new Button("End"));
-        HorizontalLayout textFields = new HorizontalLayout();
+
+        VerticalLayout textFields = new VerticalLayout();
         textFields.add(new TextField("Player Name"));
         textFields.add(new TextField("Age"));
         textFields.add(new TextField("Ranking"));
+
         FormLayout formLayout = new FormLayout();
         formLayout.add(new TextField("Player Name"));
         formLayout.add(new TextField("Age"));
         formLayout.add(new TextField("Ranking"));
-        Image image = new Image();
 
         add(layout);
         add(buttons);
         add(textFields);
         add(formLayout);
-        add(image);
+
     }
 }

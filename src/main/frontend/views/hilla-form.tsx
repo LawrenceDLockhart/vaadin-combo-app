@@ -33,6 +33,14 @@ export default function HillaForm() {
                 <Button className="self-end" onClick={submit} theme="primary">Submit</Button>
             </div>
 
+
+
+
+
+
+
+
+
             <h3 className="mt-xl">AutoForm</h3>
             <AutoForm service={CrudService} model={ContactModel} item={contact.value}/>
         </div>

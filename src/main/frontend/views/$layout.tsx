@@ -13,15 +13,14 @@ export default function MainLayout() {
                 <NavLink to="/">Home</NavLink>
 
                 <h3 className="text-l mt-l">Flow</h3>
-                <NavLink to="flow-components">Components</NavLink>
+                <NavLink to="flow-hello">Hello</NavLink>
                 <NavLink to="flow-layouts">Layouts</NavLink>
-                <NavLink to="flow-events">Events</NavLink>
                 <NavLink to="flow-grid">Grid</NavLink>
                 <NavLink to="flow-form">Form</NavLink>
                 <NavLink to="flow-push">Push</NavLink>
 
                 <h3 className="text-l mt-l">Hilla</h3>
-                <NavLink to="hilla-components">Components</NavLink>
+                <NavLink to="hilla-hello">Hello</NavLink>
                 <NavLink to="hilla-grid">Grid</NavLink>
                 <NavLink to="hilla-form">Form</NavLink>
                 <NavLink to="hilla-crud">Crud</NavLink>

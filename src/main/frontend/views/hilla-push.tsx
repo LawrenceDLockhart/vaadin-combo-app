@@ -12,7 +12,7 @@ export default function HillaPush() {
 
     return (
         <div>
-            <h2>{message}</h2>
+            <p>{message}</p>
         </div>
     )
 }
