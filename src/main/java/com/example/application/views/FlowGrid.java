@@ -11,7 +11,6 @@ import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
 @Route("flow-grid")
 public class FlowGrid extends VerticalLayout {
 
-
     public FlowGrid(ContactRepository repo) {
 
         add(new H2("Vaadin Grid"));
@@ -21,10 +20,10 @@ public class FlowGrid extends VerticalLayout {
         grid.addColumn(Contact::getPhone).setHeader("Phone");
 
         // Load all items into memory - easy, but not great for large data sets
-        grid.setItems(repo.findAll());
+        // grid.setItems(repo.findAll());
 
         // Use callback to lazily fetch pages from the database
-//        grid.setItems(query -> repo.findAll(VaadinSpringDataHelpers.toSpringPageRequest(query)).stream());
+         grid.setItems(query -> repo.findAll(VaadinSpringDataHelpers.toSpringPageRequest(query)).stream());
 
         add(grid);
     }

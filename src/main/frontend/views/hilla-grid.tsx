@@ -15,7 +15,7 @@ export default function HillaGrid() {
 
     return (
         <div>
-            <h3>Manual grid</h3>
+            <h3>Grid</h3>
             <Grid items={contacts.value}>
                 <GridColumn path="name" />
                 <GridColumn path="email" />
