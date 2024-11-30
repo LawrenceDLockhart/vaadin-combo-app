@@ -18,6 +18,7 @@ export default function MainLayout() {
                 <NavLink to="flow-grid">Grid</NavLink>
                 <NavLink to="flow-form">Form</NavLink>
                 <NavLink to="flow-push">Push</NavLink>
+                <NavLink to="spreadsheet">Spreadsheet</NavLink>
 
                 <h3 className="text-l mt-l">Hilla</h3>
                 <NavLink to="hilla-hello">Hello</NavLink>

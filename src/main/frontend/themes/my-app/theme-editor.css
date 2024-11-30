@@ -1,0 +1,24 @@
+/*
+ * This file has been created by the Vaadin Theme Editor. Please note that
+ * manual changes to individual CSS properties may be overwritten by the theme editor.
+ */
+div {
+  border-color:rgba(24,39,57,0.94);
+  border-width:0px;
+}
+
+div.hilla-crud-auto-crud { border-radius:0; }
+
+html {
+  --lumo-base-color:rgba(248,250,238,1);
+  --lumo-primary-color-10pct:rgba(209,209,209,0.1);
+  --lumo-primary-color-50pct:rgba(209,209,209,0.5);
+  --lumo-primary-color:rgba(209,209,209,1);
+  --lumo-secondary-text-color:hsla(214,42%,18%,0.69);
+  --lumo-size-l:2.75rem;
+  --lumo-size-m:2.25rem;
+  --lumo-size-s:1.875rem;
+  --lumo-size-xl:3.5rem;
+  --lumo-size-xs:1.625rem;
+  --lumo-success-text-color:rgba(9,242,106,1);
+}

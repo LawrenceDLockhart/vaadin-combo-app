@@ -2,7 +2,8 @@ import {useForm} from "@vaadin/hilla-react-form";
 import ContactModel from "Frontend/generated/com/example/application/data/ContactModel";
 import {ContactService, CrudService} from "Frontend/generated/endpoints";
 import {AutoForm} from "@vaadin/hilla-react-crud";
-import {Button, TextField} from "@vaadin/react-components";
+import { Button } from '@vaadin/react-components/Button';
+import { TextField } from '@vaadin/react-components/TextField';
 import {useSignal} from "@vaadin/hilla-react-signals";
 import Contact from "Frontend/generated/com/example/application/data/Contact";
 import {useEffect} from "react";
@@ -23,14 +24,14 @@ export default function HillaForm() {
 
     return (
         <div>
-            <h3>Manual form</h3>
+
             <div className="flex flex-col">
-                <div className="grid grid-cols-2 items-baseline gap-m">
+                <h1>Hilla Form</h1><div className="grid grid-cols-2 items-baseline gap-m">
                     <TextField label="Name" {...field(model.name)} />
                     <TextField label="Email" {...field(model.email)} />
                     <TextField label="Phone" {...field(model.phone)} />
                 </div>
-                <Button className="self-end" onClick={submit} theme="primary">Submit</Button>
+                <Button className="self-end" onClick={submit} theme="primary">Send</Button>
             </div>
 
 
@@ -41,8 +42,8 @@ export default function HillaForm() {
 
 
 
-            <h3 className="mt-xl">AutoForm</h3>
-            <AutoForm service={CrudService} model={ContactModel} item={contact.value}/>
+            {/*<h3 className="mt-xl">AutoForm</h3>*/}
+            {/*<AutoForm service={CrudService} model={ContactModel} item={contact.value}/>*/}
         </div>
     );
 }

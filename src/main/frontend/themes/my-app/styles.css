@@ -1,6 +1,8 @@
-[theme~="dark"] {
-    --lumo-primary-text-color: rgb(26, 209, 190);
-    --lumo-primary-color-50pct: rgba(26, 209, 190, 0.5);
-    --lumo-primary-color-10pct: rgba(26, 209, 190, 0.1);
-    --lumo-primary-color: hsl(174, 78%, 46%);
-}
+@import "theme-editor.css";
+
+/*[theme~="dark"] {*/
+/*    --lumo-primary-text-color: rgb(26, 209, 190);*/
+/*    --lumo-primary-color-50pct: rgba(26, 209, 190, 0.5);*/
+/*    --lumo-primary-color-10pct: rgba(26, 209, 190, 0.1);*/
+/*    --lumo-primary-color: hsl(174, 78%, 46%);*/
+/*}*/

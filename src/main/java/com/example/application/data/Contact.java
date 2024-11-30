@@ -12,6 +12,7 @@ public class Contact {
     @Id
     @GeneratedValue
     private Long id;
+    //constraints
     @Size(min = 2, message = "Name should be at least 2 characters")
     private String name;
     @Email(message = "Must be a valid email")

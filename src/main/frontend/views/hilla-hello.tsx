@@ -1,10 +1,14 @@
+import { LoginForm } from '@vaadin/react-components/LoginForm';
 import React, {useState} from "react";
-import {Button, TextField, Notification} from "@vaadin/react-components";
+import { Button } from '@vaadin/react-components/Button';
+import { TextField } from '@vaadin/react-components/TextField';
+import { Notification } from '@vaadin/react-components/Notification';
+
 
 export default function HillaHello() {
     const [name, setName] = useState("");
     function greet() {
-        Notification.show(name);
+        Notification.show("Hi " + name);
     }
     return (
         <div className="flex flex-col gap-s items-start">

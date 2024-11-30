@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import {PushService} from "Frontend/generated/endpoints";
 
 export default function HillaPush() {
+
     const message = useSignal('');
 
     useEffect(()=>{

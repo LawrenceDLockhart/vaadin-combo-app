@@ -6,7 +6,7 @@ import com.vaadin.flow.router.Route;
 import reactor.core.publisher.Flux;
 import java.time.Duration;
 
-@Route("flow-push")
+@Route(value = "push", layout = MainLayout.class)
 public class FlowPush extends VerticalLayout {
     public FlowPush() {
         var ui = UI.getCurrent();
